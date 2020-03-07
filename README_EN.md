@@ -8,7 +8,7 @@
 ### filter_conversion.js
 **powered by CLOUDFLARE Workers**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/process.jpeg" height="60%" width="60%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/process.jpeg" height="60%" width="60%">
 
 1. Features
     1. Generate Surge Ruleset from QuantumultX filter link and vice versa.
@@ -23,7 +23,7 @@
 ### checkin.js
 **By [Neurogram](https://github.com/Neurogram-R) feat [NavePnow](https://github.com/NavePnow)**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMAGE 2019-11-12 19:57:53.jpg" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMAGE 2019-11-12 19:57:53.jpg" height="40%" width="40%">
 
 1. Features
    1. Show Used data, Rest data and Due date
@@ -35,7 +35,7 @@
 ### checkin_1point.js
 **By [NavePnow](https://github.com/NavePnow) feat [wangfei021325](https://t.me/wangfei021325)**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMAGE 2019-11-12 19:58:49.jpg" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMAGE 2019-11-12 19:58:49.jpg" height="40%" width="40%">
 Auto check-in for 1point3acres.com
 
 [Tutorial](https://nave.work/%E4%B8%80%E4%BA%A9%E4%B8%89%E5%88%86%E5%9C%B0%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC.html)
@@ -44,7 +44,7 @@ Auto check-in for 1point3acres.com
 **By [NavePnow](https://github.com/NavePnow)**
 Modified according to the Jsbox script from author [coo11](https://t.me/coo11) 
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMG_0666.PNG" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_0666.PNG" height="40%" width="40%">
 
 1. Features
    1. Show Rest time, Rest fee and Rest flow
@@ -65,7 +65,7 @@ Modified according to the Jsbox script from author [coo11](https://t.me/coo11)
 **By [NavePnow](https://github.com/NavePnow)**
 **powered by Dark Sky**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMG_0886.jpg" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_0886.jpg" height="40%" width="40%">
 
 1. Features
    1. Show weather icon, range of temperature, precipProbability and hourly summary
@@ -88,14 +88,57 @@ Modified according to the Jsbox script from author [coo11](https://t.me/coo11)
 **By [NavePnow](https://github.com/NavePnow)**
 **inspired by [Nobyda](https://t.me/nubida)**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMG_1189.JPG" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_1189.JPG" height="40%" width="40%">
 Auto check-in for Weibo Super_Talk
 
 [Tutorial](https://nave.work/微博超话自动签到脚本.html)
+
+### google_script/singtel.js
+**By [NavePnow](https://github.com/NavePnow)**
+**powered by Google Script**
+
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_1888.jpg" height="40%" width="40%">
+
+1. Features
+   1. Show Rest time, fee, flow, SMS and Calls.
+   2. Run the script remotely
+2. Instructions
+   1. Create a bot from [BotFather](https://telegram.me/BotFather) and replace `BOT_TOKEN` with token received from bot father
+   2. Get your personal chat id from [get_id_bot](https://telegram.me/get_id_bot) and replace `CHAT_ID` with it
+   3. Install http capture app like [HTTP Catcher](https://apps.apple.com/us/app/http-catcher/id1445874902) on your phone
+   4. Install [hi!App](https://apps.apple.com/us/app/singtel-prepaid-hi-app/id1034712778) app from app store and log in by your phone number
+   5. Open the http capture app and refresh the hi!App (reopen)
+   6. Find request `https://hiapp.aws.singtel.com/api/v2/usage/dashboard`
+   7. Write down `Authorization` and `Cookie` and replace them in the script
+   8. Copy all content to the `Google Script Editor`
+   9. Set a proper time to trigger it
+3. ⚠️ Something you know know
+    1. Feel free to [contact me](https://t.me/Leped_Bot) if you have any problem.
+
+### google_script/calendar.js
+**By [NavePnow](https://github.com/NavePnow)**
+**powered by Google Script and Google Developers Console**
+
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_1925.jpg" height="40%" width="40%">
+
+1. Features
+   1. Set muliply calendars according to `Google Calendar Api`
+   2. Run the script remotely
+2. Instructions
+   1. Create a bot from [BotFather](https://telegram.me/BotFather) and replace `BOT_TOKEN` with token received from bot father
+   2. Get your personal chat id from [get_id_bot](https://telegram.me/get_id_bot) and replace `CHAT_ID` with it
+   3. Register your application with the [Google Developers Console](https://console.developers.google.com)
+   4. Activate the Google Calendar API in the [Google Developers Console](https://console.developers.google.com)
+   5. Under Credentials, create a new Public API access key and replace the `API_KEY` with it
+   6. Find personal Calendar ID under `[Google Calendar] -> [Setting and Sharing] -> [Calendar Setting]` and add it into `calendar_id` 
+   8. Copy all content to the `Google Script Editor`
+   9. Set a proper time to trigger it
+3. ⚠️ Something you know know
+    1. Feel free to [contact me](https://t.me/Leped_Bot) if you have any problem.
 
 # Tip Jar
 If you're really, really enjoying the content, you can leave extra tips to support the developer. Thanks for even considering.
 
 | PayPal                                                                                                                                                                       | 微信赞赏 WeChat Pay                                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DSZJCN4ZUEW74&currency_code=USD&source=url) | <img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/1234.JPG" width="200">
+| [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DSZJCN4ZUEW74&currency_code=USD&source=url) | <img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/1234.JPG" width="200">

@@ -9,7 +9,7 @@
 **By [NavePnow](https://github.com/NavePnow)**
 **powered by CLOUDFLARE Workers**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/process.jpeg" height="60%" width="60%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/process.jpeg" height="60%" width="60%">
 
 1. 特点
     1. 从 QuantumultX 分流链接生成 Surge 规则集，反之亦然。
@@ -23,7 +23,7 @@
 ### checkin.js
 **By [Neurogram](https://github.com/Neurogram-R) feat [NavePnow](https://github.com/NavePnow)**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMAGE 2019-11-12 19:57:53.jpg" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMAGE 2019-11-12 19:57:53.jpg" height="40%" width="40%">
 
 1. 特点
    1. 展示已用流量，剩余流量和到期时间
@@ -35,7 +35,7 @@
 ### checkin_1point.js
 **By [NavePnow](https://github.com/NavePnow) feat [wangfei021325](https://t.me/wangfei021325)**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMAGE 2019-11-12 19:58:49.jpg" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMAGE 2019-11-12 19:58:49.jpg" height="40%" width="40%">
 一亩三分地论坛自动签到脚本
 
 [教程](https://nave.work/%E4%B8%80%E4%BA%A9%E4%B8%89%E5%88%86%E5%9C%B0%E8%87%AA%E5%8A%A8%E7%AD%BE%E5%88%B0%E8%84%9A%E6%9C%AC.html)
@@ -44,7 +44,7 @@
 **By [NavePnow](https://github.com/NavePnow)**
 根据作者[coo11](https://t.me/coo11) 的 Jsbox 脚本进行修改
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMG_0666.PNG" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_0666.PNG" height="40%" width="40%">
 
 1. 特点
    1. 显示剩余流量，话费余额和流量剩余
@@ -65,7 +65,7 @@
 **By [NavePnow](https://github.com/NavePnow)**
 **powered by Dark Sky**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMG_0886.jpg" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_0886.jpg" height="40%" width="40%">
 
 1. 特点
    1. 显示天气图标，当天温度，降雨概率以及实时天气信息总结
@@ -88,13 +88,56 @@
 **By [NavePnow](https://github.com/NavePnow)**
 **inspired by [Nobyda](https://t.me/nubida)**
 
-<img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/IMG_1189.JPG" height="40%" width="40%">
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_1189.JPG" height="40%" width="40%">
 微博超话自动签到脚本
 
 [教程](https://nave.work/微博超话自动签到脚本.html)
+
+### google_script/singtel.js
+**By [NavePnow](https://github.com/NavePnow)**
+**powered by Google Script**
+
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_1888.jpg" height="40%" width="40%">
+
+1. 特点
+   1. 显示剩余话费，流量，短信和电话相关信息
+   2. 云端运行脚本(Google Script),无需消耗本地资源
+2. 步骤
+   1. 从 [BotFather](https://telegram.me/BotFather) 创建一个bot，记下 `token`，代替脚本中的关键词 `BOT_TOKEN`
+   2. 从 [get_id_bot](https://telegram.me/get_id_bot) 得到用户 `id`，代替脚本中的关键词 `CHAT_ID`
+   3. 安装抓包软件，例如 [HTTP Catcher](https://apps.apple.com/us/app/http-catcher/id1445874902)
+   4. 安装 [hi!App](https://apps.apple.com/us/app/singtel-prepaid-hi-app/id1034712778) 软件，并利用自己的手机号进行登录
+   5. 打开抓包软件进行抓包，刷新 `hi!App` (重新打开)
+   6. 在网络请求中找到 `https://hiapp.aws.singtel.com/api/v2/usage/dashboard`
+   7. 记下请求头中的 `Authorization` 和 `Cookie`，代替脚本中的关键词
+   8. 拷贝脚本内容到 `Google Script` 的编辑器中
+   9. 设置一个合适的时间去触发脚本
+3.  注意⚠️
+    1. 如果有问题，欢迎 [反馈](https://t.me/Leped_Bot) 
+
+### google_script/calendar.js
+**By [NavePnow](https://github.com/NavePnow)**
+**powered by Google Script and Google Developers Console**
+
+<img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/IMG_1925.jpg" height="40%" width="40%">
+
+1. 特点
+   1. 根据 `Google Calendar Api` 可同时设置多个日历进行每日提醒
+   2. 云端运行脚本(Google Script),无需消耗本地资源
+2. 步骤
+   1. 从 [BotFather](https://telegram.me/BotFather) 创建一个bot，记下 `token`，代替脚本中的关键词
+   2. 从 [get_id_bot](https://telegram.me/get_id_bot) 得到用户 `id`，代替脚本中的关键词
+   3. 在 [Google Developers Console](https://console.developers.google.com) 中登录并激活你的 Google 账户
+   4. 在 [Google Developers Console](https://console.developers.google.com) 激活 Google Calendar API
+   5. 打开 [Google Developers Console](https://console.developers.google.com), 在凭证标签下创建新的 `Public API access key`， 代替脚本中的关键词 `API_KEY`
+   6. 在 `[Google Calendar] -> [Setting and Sharing] -> [Calendar Setting]` 下找到你的 `Calendar ID` ,添加到脚本 `calendar_id` 中
+   7. 拷贝脚本内容到 `Google Script` 的编辑器中
+   8. 设置一个合适的时间去触发脚本
+3.  注意⚠️
+    1. 如果有问题，欢迎 [反馈](https://t.me/Leped_Bot) 
 
 # Tip Jar
 
 | PayPal                                                                                                                                                                       | 微信赞赏 WeChat Pay                                                                                                    |
 | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------- |
-| [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DSZJCN4ZUEW74&currency_code=USD&source=url) | <img src="https://raw.githubusercontent.com/NavePnow/blog_photo/master/1234.JPG" width="200">
+| [![paypal](https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=DSZJCN4ZUEW74&currency_code=USD&source=url) | <img src="https://cdn.jsdelivr.net/gh/NavePnow/blog_photo@private/1234.JPG" width="200">
